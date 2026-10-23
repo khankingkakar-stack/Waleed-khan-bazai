@@ -157,6 +157,7 @@ word_frequency = {}
 for word in words:
     # Remove common punctuation from the beginning and end of each word.
     word = word.strip(".,!?;:\"'()[]{}")
+    
 
     if word:  # Ignore empty strings.
         if word in word_frequency:
