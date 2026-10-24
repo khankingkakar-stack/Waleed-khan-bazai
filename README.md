@@ -4,9 +4,8 @@ Assignment no 7 sql
 # Author: Your Name
 # Description: Solutions to Questions 1–6.
 
-# ============================================================
+
 # QUESTION 1: Working with Lists
-# ============================================================
 
 # Create a list containing at least 8 integers.
 numbers = [12, 7, 24, 15, 8, 31, 42, 19]
@@ -63,9 +62,9 @@ else:
     print("Result: Failed")
 
 
-# ============================================================
+
 # QUESTION 3: List of Dictionaries
-# ============================================================
+
 
 # Each employee is represented by a dictionary.
 employees = [
@@ -101,9 +100,8 @@ print(
 print(f"Total salary expense: Rs. {total_salary:,}")
 
 
-# ============================================================
 # QUESTION 4: While Loop with User Input
-# ============================================================
+
 
 print("\nQUESTION 4: While Loop with User Input")
 print("Enter numbers one by one. Enter -1 to stop.")
@@ -142,9 +140,9 @@ else:
     print("No numbers were entered, so largest and smallest cannot be calculated.")
 
 
-# ============================================================
+
 # QUESTION 5: Word Frequency Counter
-# ============================================================
+
 
 print("\nQUESTION 5: Word Frequency Counter")
 sentence = input("Enter a sentence: ")
@@ -173,9 +171,9 @@ else:
     print("No words were entered.")
 
 
-# ============================================================
+
 # QUESTION 6: Nested Loops – Multiplication Table
-# ============================================================
+
 
 print("\nQUESTION 6: Multiplication Table (1 to 5)")
 
