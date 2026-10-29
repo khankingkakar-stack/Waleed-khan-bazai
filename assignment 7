@@ -1,0 +1,90 @@
+# ============================================================
+# Python Assignment: Lists, Dictionaries, Loops, and Conditional Statements
+# Author: Your Name
+# Description: Solutions to Questions 1–6.
+# ============================================================
+
+# ============================================================
+# QUESTION 1: Working with Lists
+# ============================================================
+numbers = [12, 7, 24, 15, 8, 31, 42, 19]
+
+print("\nQUESTION 1: Working with Lists")
+print("Numbers in the list:")
+
+# Print each number and calculate the sum using a loop
+total = 0
+for number in numbers:
+    print(number)
+    total += number
+
+print("Sum of all numbers:", total)
+
+# Print only even numbers using a conditional statement
+print("Even numbers:")
+for number in numbers:
+    if number % 2 == 0:
+        print(number)
+
+# ============================================================
+# QUESTION 2: Dictionary Basics
+# ============================================================
+student = {
+    "name": "Ali",
+    "age": 20,
+    "course": "Python Programming",
+    "marks": [75, 82, 68]
+}
+
+print("\nQUESTION 2: Dictionary Basics")
+print("Student details:")
+
+# Display every key and its value
+for key, value in student.items():
+    print(f"{key}: {value}")
+
+# Calculate the average using a loop
+marks_total = 0
+for mark in student["marks"]:
+    marks_total += mark
+
+average = marks_total / len(student["marks"])
+print(f"Average marks: {average:.2f}")
+
+# Decide whether the student passed or failed
+if average >= 50:
+    print("Result: Passed")
+else:
+    print("Result: Failed")
+
+# ============================================================
+# QUESTION 3: List of Dictionaries
+# ============================================================
+employees = [
+    {"name": "Ayesha", "department": "HR", "salary": 65000},
+    {"name": "Bilal", "department": "Finance", "salary": 72000},
+    {"name": "Sara", "department": "IT", "salary": 80000}
+]
+
+print("\nQUESTION 3: List of Dictionaries")
+print("Employee details:")
+
+total_salary = 0
+highest_paid_employee = employees[0]
+
+# Process all employees, calculate total salary, and find the highest salary
+for employee in employees:
+    print(
+        f"Name: {employee['name']}, "
+        f"Department: {employee['department']}, "
+        f"Salary: Rs. {employee['salary']:,}"
+    )
+    
+    total_salary += employee["salary"]
+    
+    # Track the employee with the highest salary
+    if employee["salary"] > highest_paid_employee["salary"]:
+        highest_paid_employee = employee
+
+print(f"\nTotal Salary of all employees: Rs. {total_salary:,}")
+print(f"Highest Paid Employee: {highest_paid_employee['name']} (Rs. {highest_paid_employee['salary']:,})")
